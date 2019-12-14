@@ -1,0 +1,58 @@
+<div class="row">
+        <div class="col-xs-11 mt-5 ml-5 mr-5 mb-5 mx-auto">
+            <div class="card cardGrey mt-5 mb-5">
+        <h1 class="mt-5 ml-5">Skill Details</h1>
+    
+
+        
+        <form class="needs-validation" [formGroup]="editForm">
+            
+            <div class="row mt-5 ml-5 mr-5">
+                 <div class="col-12">
+                    <label for="rating">rating</label>
+                    <input type="text" class="form-control" id="rating" formControlName="rating"
+                        placeholder="rating">
+                </div>
+            </div>
+            <div class="row mt-5 ml-5 mr-5">
+                    <div class="col-12">
+                    <label for="experience">yearsOfExperience</label>
+                    <input type="text" class="form-control" id="experience" formControlName="experience"
+                        placeholder="experience" >
+                </div>
+                </div>
+    
+                <div class="row mt-5 ml-5 mr-5">
+                        <div class="col-12">
+                    <label for="trainings">trainingdelivered</label>
+                    <input type="text" class="form-control" id="trainings" formControlName="trainings"
+                        placeholder="trainingdelivered">
+                </div>
+                </div>
+            
+            
+    
+                <div class="row mt-5 ml-5 mr-5">
+                        <div class="col-12">
+                    <label for="facilities">FacilitiesOffered</label>
+                    <input type="text" class="form-control" id="facilities" formControlName="facilities" placeholder="facilities">
+            </div>
+                </div>
+
+                <div class="row mt-5 ml-5 mr-5 mb-5">
+                        <div class="col-6">
+                    <button type="submit" class="btn button-color text-light" (click)="submit(editForm.value)" >Submit</button>
+                        </div>
+                        <div>
+                    <button type="submit" class="btn button-color text-light" (click)="submitAdd(editForm.value)" >Add Skills</button>
+                </div>
+            </div>
+    
+        </form>
+	</div>
+</div>
+</div>
+    
+    
+
+
